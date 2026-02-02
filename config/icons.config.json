@@ -1,0 +1,45 @@
+{
+  "$schema": "./icons.schema.json",
+  "icons": {
+    "incident": {
+      "background": "#FF3B30",
+      "shape": "circle",
+      "layers": {
+        "fill": "#FFFFFF",
+        "stroke": "#000000"
+      }
+    },
+    "work_zone": {
+      "background": "#FF9500",
+      "shape": "rounded-square",
+      "layers": {
+        "fill": "#000000"
+      }
+    },
+    "weather_station": {
+      "background": "#007AFF",
+      "shape": "circle",
+      "layers": {
+        "fill": "#FFFFFF",
+        "stroke": "#FFFFFF"
+      }
+    },
+    "roadblock": {
+      "background": "#FF3B30",
+      "shape": "circle",
+      "padding": 0.15,
+      "layers": {
+        "fill": "#FFFFFF",
+        "stroke": "#FFFFFF"
+      }
+    }
+  },
+  "defaults": {
+    "background": "#333333",
+    "shape": "circle",
+    "layers": {
+      "fill": "#FFFFFF",
+      "stroke": "#FFFFFF"
+    }
+  }
+}

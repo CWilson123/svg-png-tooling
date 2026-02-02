@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Icons Configuration",
+  "description": "Per-icon theming and layer color configuration",
+  "type": "object",
+  "definitions": {
+    "hexColor": {
+      "type": "string",
+      "pattern": "^#[0-9A-Fa-f]{6}$",
+      "description": "Hex color in #RRGGBB format"
+    },
+    "backgroundShape": {
+      "type": "string",
+      "enum": ["circle", "rounded-square", "square", "none"],
+      "default": "circle",
+      "description": "Background shape type"
+    },
+    "padding": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "default": 0.2,
+      "description": "Padding ratio (0-1) for icon inset from edges"
+    },
+    "layers": {
+      "type": "object",
+      "description": "Maps element IDs or class names to hex colors",
+      "additionalProperties": {
+        "$ref": "#/definitions/hexColor"
+      }
+    },
+    "iconConfig": {
+      "type": "object",
+      "properties": {
+        "background": {
+          "$ref": "#/definitions/hexColor",
+          "description": "Background shape color"
+        },
+        "shape": {
+          "$ref": "#/definitions/backgroundShape"
+        },
+        "padding": {
+          "$ref": "#/definitions/padding"
+        },
+        "layers": {
+          "$ref": "#/definitions/layers",
+          "description": "Layer color mappings"
+        }
+      },
+      "required": ["background", "layers"],
+      "additionalProperties": false
+    },
+    "iconKey": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$",
+      "description": "Icon key: lowercase alphanumeric and underscores only"
+    }
+  },
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "icons": {
+      "type": "object",
+      "description": "Per-icon configuration keyed by icon name",
+      "additionalProperties": {
+        "$ref": "#/definitions/iconConfig"
+      },
+      "propertyNames": {
+        "$ref": "#/definitions/iconKey"
+      }
+    },
+    "defaults": {
+      "$ref": "#/definitions/iconConfig",
+      "description": "Default configuration for icons not explicitly listed"
+    }
+  },
+  "required": ["icons", "defaults"],
+  "additionalProperties": false
+}

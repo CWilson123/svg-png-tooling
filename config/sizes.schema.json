@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Sizes Configuration",
+  "description": "Defines pixel dimensions and output mode for PNG output",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "densityMode": {
+      "type": "string",
+      "enum": ["size-folders", "density", "both"],
+      "default": "size-folders",
+      "description": "Output mode: size-folders (icons-dist/{size}/), density (@1x/@2x/@3x), or both"
+    },
+    "sizes": {
+      "type": "array",
+      "description": "Array of pixel sizes to generate. For density mode, first size is 1x base.",
+      "items": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 4096
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  },
+  "required": ["sizes"],
+  "additionalProperties": false
+}

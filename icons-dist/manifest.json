@@ -1,0 +1,152 @@
+{
+  "generatedAt": "2026-02-01T23:50:06.835Z",
+  "densityMode": "both",
+  "sizes": [
+    32,
+    64,
+    96
+  ],
+  "icons": {
+    "caution": {
+      "shape": "circle",
+      "background": "#333333",
+      "files": {
+        "32": "32/caution.png",
+        "64": "64/caution.png",
+        "96": "96/caution.png"
+      },
+      "densityFiles": {
+        "1x": "caution.png",
+        "2x": "caution@2x.png",
+        "3x": "caution@3x.png"
+      }
+    },
+    "cloud": {
+      "shape": "circle",
+      "background": "#333333",
+      "files": {
+        "32": "32/cloud.png",
+        "64": "64/cloud.png",
+        "96": "96/cloud.png"
+      },
+      "densityFiles": {
+        "1x": "cloud.png",
+        "2x": "cloud@2x.png",
+        "3x": "cloud@3x.png"
+      }
+    },
+    "construction": {
+      "shape": "circle",
+      "background": "#333333",
+      "files": {
+        "32": "32/construction.png",
+        "64": "64/construction.png",
+        "96": "96/construction.png"
+      },
+      "densityFiles": {
+        "1x": "construction.png",
+        "2x": "construction@2x.png",
+        "3x": "construction@3x.png"
+      }
+    },
+    "incident": {
+      "shape": "circle",
+      "background": "#FF3B30",
+      "files": {
+        "32": "32/incident.png",
+        "64": "64/incident.png",
+        "96": "96/incident.png"
+      },
+      "densityFiles": {
+        "1x": "incident.png",
+        "2x": "incident@2x.png",
+        "3x": "incident@3x.png"
+      }
+    },
+    "information": {
+      "shape": "circle",
+      "background": "#333333",
+      "files": {
+        "32": "32/information.png",
+        "64": "64/information.png",
+        "96": "96/information.png"
+      },
+      "densityFiles": {
+        "1x": "information.png",
+        "2x": "information@2x.png",
+        "3x": "information@3x.png"
+      }
+    },
+    "roadblock": {
+      "shape": "circle",
+      "background": "#FF3B30",
+      "files": {
+        "32": "32/roadblock.png",
+        "64": "64/roadblock.png",
+        "96": "96/roadblock.png"
+      },
+      "densityFiles": {
+        "1x": "roadblock.png",
+        "2x": "roadblock@2x.png",
+        "3x": "roadblock@3x.png"
+      }
+    },
+    "route": {
+      "shape": "circle",
+      "background": "#333333",
+      "files": {
+        "32": "32/route.png",
+        "64": "64/route.png",
+        "96": "96/route.png"
+      },
+      "densityFiles": {
+        "1x": "route.png",
+        "2x": "route@2x.png",
+        "3x": "route@3x.png"
+      }
+    },
+    "truck": {
+      "shape": "circle",
+      "background": "#333333",
+      "files": {
+        "32": "32/truck.png",
+        "64": "64/truck.png",
+        "96": "96/truck.png"
+      },
+      "densityFiles": {
+        "1x": "truck.png",
+        "2x": "truck@2x.png",
+        "3x": "truck@3x.png"
+      }
+    },
+    "weather_station": {
+      "shape": "circle",
+      "background": "#007AFF",
+      "files": {
+        "32": "32/weather_station.png",
+        "64": "64/weather_station.png",
+        "96": "96/weather_station.png"
+      },
+      "densityFiles": {
+        "1x": "weather_station.png",
+        "2x": "weather_station@2x.png",
+        "3x": "weather_station@3x.png"
+      }
+    },
+    "work_zone": {
+      "shape": "rounded-square",
+      "background": "#FF9500",
+      "files": {
+        "32": "32/work_zone.png",
+        "64": "64/work_zone.png",
+        "96": "96/work_zone.png"
+      },
+      "densityFiles": {
+        "1x": "work_zone.png",
+        "2x": "work_zone@2x.png",
+        "3x": "work_zone@3x.png"
+      }
+    }
+  },
+  "baseSize": 32
+}

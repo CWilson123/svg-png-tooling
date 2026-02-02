@@ -1,0 +1,33 @@
+{
+  "name": "icon-pipeline",
+  "version": "1.0.0",
+  "description": "CLI tool that reads SVG files, applies per-icon color configuration, and outputs PNGs at specified pixel sizes",
+  "main": "dist/index.js",
+  "bin": {
+    "icon-pipeline": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc && node dist/index.js",
+    "preview": "tsc && node dist/cli-preview.js",
+    "verify": "tsc && node dist/cli-verify.js",
+    "compile": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "svg",
+    "png",
+    "icons",
+    "pipeline",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.19.30",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "@xmldom/xmldom": "^0.8.11",
+    "sharp": "^0.34.5"
+  }
+}

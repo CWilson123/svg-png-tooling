@@ -1,0 +1,5 @@
+{
+  "$schema": "./sizes.schema.json",
+  "densityMode": "both",
+  "sizes": [32, 64, 96]
+}
