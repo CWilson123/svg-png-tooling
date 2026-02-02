@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-01T23:50:06.835Z",
+  "generatedAt": "2026-02-02T01:44:37.112Z",
   "densityMode": "both",
   "sizes": [
     32,
@@ -7,51 +7,37 @@
     96
   ],
   "icons": {
-    "caution": {
+    "dms": {
       "shape": "circle",
-      "background": "#333333",
+      "background": "#007AFF",
       "files": {
-        "32": "32/caution.png",
-        "64": "64/caution.png",
-        "96": "96/caution.png"
+        "32": "32/dms.png",
+        "64": "64/dms.png",
+        "96": "96/dms.png"
       },
       "densityFiles": {
-        "1x": "caution.png",
-        "2x": "caution@2x.png",
-        "3x": "caution@3x.png"
+        "1x": "dms.png",
+        "2x": "dms@2x.png",
+        "3x": "dms@3x.png"
       }
     },
-    "cloud": {
+    "dms_alternate": {
       "shape": "circle",
-      "background": "#333333",
+      "background": "#007AFF",
       "files": {
-        "32": "32/cloud.png",
-        "64": "64/cloud.png",
-        "96": "96/cloud.png"
+        "32": "32/dms_alternate.png",
+        "64": "64/dms_alternate.png",
+        "96": "96/dms_alternate.png"
       },
       "densityFiles": {
-        "1x": "cloud.png",
-        "2x": "cloud@2x.png",
-        "3x": "cloud@3x.png"
-      }
-    },
-    "construction": {
-      "shape": "circle",
-      "background": "#333333",
-      "files": {
-        "32": "32/construction.png",
-        "64": "64/construction.png",
-        "96": "96/construction.png"
-      },
-      "densityFiles": {
-        "1x": "construction.png",
-        "2x": "construction@2x.png",
-        "3x": "construction@3x.png"
+        "1x": "dms_alternate.png",
+        "2x": "dms_alternate@2x.png",
+        "3x": "dms_alternate@3x.png"
       }
     },
     "incident": {
       "shape": "circle",
-      "background": "#FF3B30",
+      "background": "#FFE5E5",
       "files": {
         "32": "32/incident.png",
         "64": "64/incident.png",
@@ -63,65 +49,107 @@
         "3x": "incident@3x.png"
       }
     },
-    "information": {
+    "incident_alternate": {
       "shape": "circle",
-      "background": "#333333",
+      "background": "#FFE5E5",
       "files": {
-        "32": "32/information.png",
-        "64": "64/information.png",
-        "96": "96/information.png"
+        "32": "32/incident_alternate.png",
+        "64": "64/incident_alternate.png",
+        "96": "96/incident_alternate.png"
       },
       "densityFiles": {
-        "1x": "information.png",
-        "2x": "information@2x.png",
-        "3x": "information@3x.png"
+        "1x": "incident_alternate.png",
+        "2x": "incident_alternate@2x.png",
+        "3x": "incident_alternate@3x.png"
       }
     },
-    "roadblock": {
+    "planned_event": {
       "shape": "circle",
-      "background": "#FF3B30",
+      "background": "#F2E8FF",
       "files": {
-        "32": "32/roadblock.png",
-        "64": "64/roadblock.png",
-        "96": "96/roadblock.png"
+        "32": "32/planned_event.png",
+        "64": "64/planned_event.png",
+        "96": "96/planned_event.png"
       },
       "densityFiles": {
-        "1x": "roadblock.png",
-        "2x": "roadblock@2x.png",
-        "3x": "roadblock@3x.png"
+        "1x": "planned_event.png",
+        "2x": "planned_event@2x.png",
+        "3x": "planned_event@3x.png"
       }
     },
-    "route": {
+    "planned_event_alternate": {
       "shape": "circle",
-      "background": "#333333",
+      "background": "#F2E8FF",
       "files": {
-        "32": "32/route.png",
-        "64": "64/route.png",
-        "96": "96/route.png"
+        "32": "32/planned_event_alternate.png",
+        "64": "64/planned_event_alternate.png",
+        "96": "96/planned_event_alternate.png"
       },
       "densityFiles": {
-        "1x": "route.png",
-        "2x": "route@2x.png",
-        "3x": "route@3x.png"
+        "1x": "planned_event_alternate.png",
+        "2x": "planned_event_alternate@2x.png",
+        "3x": "planned_event_alternate@3x.png"
       }
     },
-    "truck": {
+    "road_conditions": {
       "shape": "circle",
-      "background": "#333333",
+      "background": "#D6E9FF",
       "files": {
-        "32": "32/truck.png",
-        "64": "64/truck.png",
-        "96": "96/truck.png"
+        "32": "32/road_conditions.png",
+        "64": "64/road_conditions.png",
+        "96": "96/road_conditions.png"
       },
       "densityFiles": {
-        "1x": "truck.png",
-        "2x": "truck@2x.png",
-        "3x": "truck@3x.png"
+        "1x": "road_conditions.png",
+        "2x": "road_conditions@2x.png",
+        "3x": "road_conditions@3x.png"
+      }
+    },
+    "snow_plow": {
+      "shape": "circle",
+      "background": "#FFF2CC",
+      "files": {
+        "32": "32/snow_plow.png",
+        "64": "64/snow_plow.png",
+        "96": "96/snow_plow.png"
+      },
+      "densityFiles": {
+        "1x": "snow_plow.png",
+        "2x": "snow_plow@2x.png",
+        "3x": "snow_plow@3x.png"
+      }
+    },
+    "traffic_incidents": {
+      "shape": "circle",
+      "background": "#FFE5E5",
+      "files": {
+        "32": "32/traffic_incidents.png",
+        "64": "64/traffic_incidents.png",
+        "96": "96/traffic_incidents.png"
+      },
+      "densityFiles": {
+        "1x": "traffic_incidents.png",
+        "2x": "traffic_incidents@2x.png",
+        "3x": "traffic_incidents@3x.png"
+      }
+    },
+    "traffic_incidents_alternate": {
+      "shape": "circle",
+      "background": "#FFE5E5",
+      "files": {
+        "32": "32/traffic_incidents_alternate.png",
+        "64": "64/traffic_incidents_alternate.png",
+        "96": "96/traffic_incidents_alternate.png"
+      },
+      "densityFiles": {
+        "1x": "traffic_incidents_alternate.png",
+        "2x": "traffic_incidents_alternate@2x.png",
+        "3x": "traffic_incidents_alternate@3x.png"
       }
     },
     "weather_station": {
       "shape": "circle",
-      "background": "#007AFF",
+      "background": "#D6F0FF",
       "files": {
         "32": "32/weather_station.png",
         "64": "64/weather_station.png",
@@ -131,6 +159,20 @@
         "1x": "weather_station.png",
         "2x": "weather_station@2x.png",
         "3x": "weather_station@3x.png"
+      }
+    },
+    "weather_station_alternate": {
+      "shape": "circle",
+      "background": "#D6F0FF",
+      "files": {
+        "32": "32/weather_station_alternate.png",
+        "64": "64/weather_station_alternate.png",
+        "96": "96/weather_station_alternate.png"
+      },
+      "densityFiles": {
+        "1x": "weather_station_alternate.png",
+        "2x": "weather_station_alternate@2x.png",
+        "3x": "weather_station_alternate@3x.png"
       }
     },
     "work_zone": {
@@ -145,6 +187,20 @@
         "1x": "work_zone.png",
         "2x": "work_zone@2x.png",
         "3x": "work_zone@3x.png"
+      }
+    },
+    "work_zone_alternate": {
+      "shape": "rounded-square",
+      "background": "#FF9500",
+      "files": {
+        "32": "32/work_zone_alternate.png",
+        "64": "64/work_zone_alternate.png",
+        "96": "96/work_zone_alternate.png"
+      },
+      "densityFiles": {
+        "1x": "work_zone_alternate.png",
+        "2x": "work_zone_alternate@2x.png",
+        "3x": "work_zone_alternate@3x.png"
       }
     }
   },

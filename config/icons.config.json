@@ -1,33 +1,120 @@
 {
   "$schema": "./icons.schema.json",
   "icons": {
+    "dms": {
+      "background": "#007AFF",
+      "shape": "circle",
+      "layers": {
+        "stroke": "#FFFFFF",
+        "fill": "#FFFFFF"
+      }
+    },
+    "dms_alternate": {
+      "background": "#007AFF",
+      "shape": "circle",
+      "layers": {
+        "stroke": "#FFFFFF",
+        "fill": "#FFFFFF"
+      }
+    },
+
     "incident": {
-      "background": "#FF3B30",
+      "background": "#FFE5E5",
+      "shape": "circle",
+      "layers": {
+        "fill": "#FFFFFF",
+        "stroke": "#FF3B30"
+      }
+    },
+    "incident_alternate": {
+      "background": "#FFE5E5",
+      "shape": "circle",
+      "layers": {
+        "fill": "#FFFFFF",
+        "stroke": "#FF3B30"
+      }
+    },
+
+    "traffic_incidents": {
+      "background": "#FFE5E5",
+      "shape": "circle",
+      "layers": {
+        "fill": "#FFFFFF",
+        "stroke": "#FF3B30"
+      }
+    },
+    "traffic_incidents_alternate": {
+      "background": "#FFE5E5",
+      "shape": "circle",
+      "layers": {
+        "fill": "#FFFFFF",
+        "stroke": "#FF3B30"
+      }
+    },
+
+    "planned_event": {
+      "background": "#F2E8FF",
+      "shape": "circle",
+      "layers": {
+        "fill": "#FFFFFF",
+        "stroke": "#AF52DE"
+      }
+    },
+    "planned_event_alternate": {
+      "background": "#F2E8FF",
+      "shape": "circle",
+      "layers": {
+        "fill": "#FFFFFF",
+        "stroke": "#AF52DE"
+      }
+    },
+
+    "road_conditions": {
+      "background": "#D6E9FF",
+      "shape": "circle",
+      "layers": {
+        "fill": "#FFFFFF",
+        "stroke": "#003A8C"
+      }
+    },
+
+    "snow_plow": {
+      "background": "#FFF2CC",
+      "shape": "circle",
+      "layers": {
+        "fill": "#FFFFFF",
+        "stroke": "#FFB000"
+      }
+    },
+
+    "weather_station": {
+      "background": "#D6F0FF",
       "shape": "circle",
       "layers": {
         "fill": "#FFFFFF",
         "stroke": "#000000"
       }
     },
+    "weather_station_alternate": {
+      "background": "#D6F0FF",
+      "shape": "circle",
+      "layers": {
+        "fill": "#FFFFFF",
+        "stroke": "#000000"
+      }
+    },
+
     "work_zone": {
       "background": "#FF9500",
       "shape": "rounded-square",
-      "layers": {
-        "fill": "#000000"
-      }
-    },
-    "weather_station": {
-      "background": "#007AFF",
-      "shape": "circle",
       "layers": {
         "fill": "#FFFFFF",
         "stroke": "#FFFFFF"
       }
     },
-    "roadblock": {
-      "background": "#FF3B30",
-      "shape": "circle",
-      "padding": 0.15,
+    "work_zone_alternate": {
+      "background": "#FF9500",
+      "shape": "rounded-square",
       "layers": {
         "fill": "#FFFFFF",
         "stroke": "#FFFFFF"

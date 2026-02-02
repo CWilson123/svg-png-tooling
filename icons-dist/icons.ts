@@ -2,16 +2,20 @@
 // DO NOT EDIT MANUALLY
 
 export const icons = {
-  caution: require('./caution.png'),
-  cloud: require('./cloud.png'),
-  construction: require('./construction.png'),
+  dms: require('./dms.png'),
+  dms_alternate: require('./dms_alternate.png'),
   incident: require('./incident.png'),
-  information: require('./information.png'),
-  roadblock: require('./roadblock.png'),
-  route: require('./route.png'),
-  truck: require('./truck.png'),
+  incident_alternate: require('./incident_alternate.png'),
+  planned_event: require('./planned_event.png'),
+  planned_event_alternate: require('./planned_event_alternate.png'),
+  road_conditions: require('./road_conditions.png'),
+  snow_plow: require('./snow_plow.png'),
+  traffic_incidents: require('./traffic_incidents.png'),
+  traffic_incidents_alternate: require('./traffic_incidents_alternate.png'),
   weather_station: require('./weather_station.png'),
+  weather_station_alternate: require('./weather_station_alternate.png'),
   work_zone: require('./work_zone.png'),
+  work_zone_alternate: require('./work_zone_alternate.png'),
 } as const;
 
 export type IconName = keyof typeof icons;
