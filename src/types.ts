@@ -19,6 +19,7 @@ export type BackgroundShape = 'circle' | 'rounded-square' | 'square' | 'none';
 export const ICON_CONFIG_DEFAULTS = {
   shape: 'circle' as BackgroundShape,
   padding: 0.2,
+  zoom: 1.1,
 };
 
 /**
@@ -31,6 +32,8 @@ export interface IconConfig {
   shape?: BackgroundShape;
   /** Padding ratio 0-1 for icon inset (default: 0.2) */
   padding?: number;
+  /** Zoom multiplier for icon size (default: 1) */
+  zoom?: number;
   /** Maps SVG element IDs or class names to their fill/stroke colors */
   layers: LayerColors;
 }
@@ -99,6 +102,7 @@ export interface BuildPlanEntry {
   background: HexColor;
   shape: BackgroundShape;
   padding: number;
+  zoom: number;
   layers: LayerColors;
   usingDefaults: boolean;
   outputFiles: string[];

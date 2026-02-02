@@ -96,17 +96,19 @@
       }
     },
     "weather_station_alternate": {
-      "background": "#D6F0FF",
+      "background": "#007AFF",
       "shape": "circle",
+      "zoom": 1.4,
       "layers": {
         "fill": "#FFFFFF",
-        "stroke": "#000000"
+        "stroke": "#FFFFFF"
       }
     },
 
     "work_zone": {
       "background": "#FF9500",
-      "shape": "rounded-square",
+      "shape": "circle",
+      "zoom": 1.4,
       "layers": {
         "fill": "#FFFFFF",
         "stroke": "#FFFFFF"
@@ -114,7 +116,8 @@
     },
     "work_zone_alternate": {
       "background": "#FF9500",
-      "shape": "rounded-square",
+      "shape": "circle",
+      "zoom": 1.4,
       "layers": {
         "fill": "#FFFFFF",
         "stroke": "#FFFFFF"
@@ -124,6 +127,7 @@
   "defaults": {
     "background": "#333333",
     "shape": "circle",
+    "zoom": 1.1,
     "layers": {
       "fill": "#FFFFFF",
       "stroke": "#FFFFFF"

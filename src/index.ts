@@ -94,6 +94,7 @@ function generateBuildPlan(
       background: icon.config.background,
       shape: icon.config.shape ?? ICON_CONFIG_DEFAULTS.shape,
       padding: icon.config.padding ?? ICON_CONFIG_DEFAULTS.padding,
+      zoom: icon.config.zoom ?? ICON_CONFIG_DEFAULTS.zoom,
       layers: icon.config.layers,
       usingDefaults: icon.usingDefaults,
       outputFiles,
@@ -123,6 +124,7 @@ function printBuildPlan(plan: BuildPlanEntry[]): void {
     console.log(`  Background: ${entry.background}`);
     console.log(`  Shape: ${entry.shape}`);
     console.log(`  Padding: ${entry.padding}`);
+    console.log(`  Zoom: ${entry.zoom}`);
     console.log(`  Layers:`);
     for (const [layer, color] of Object.entries(entry.layers)) {
       console.log(`    ${layer}: ${color}`);

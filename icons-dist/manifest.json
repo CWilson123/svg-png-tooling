@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-02T01:44:37.112Z",
+  "generatedAt": "2026-02-02T02:04:53.633Z",
   "densityMode": "both",
   "sizes": [
     32,
@@ -163,7 +163,7 @@
     },
     "weather_station_alternate": {
       "shape": "circle",
-      "background": "#D6F0FF",
+      "background": "#007AFF",
       "files": {
         "32": "32/weather_station_alternate.png",
         "64": "64/weather_station_alternate.png",
@@ -176,7 +176,7 @@
       }
     },
     "work_zone": {
-      "shape": "rounded-square",
+      "shape": "circle",
       "background": "#FF9500",
       "files": {
         "32": "32/work_zone.png",
@@ -190,7 +190,7 @@
       }
     },
     "work_zone_alternate": {
-      "shape": "rounded-square",
+      "shape": "circle",
       "background": "#FF9500",
       "files": {
         "32": "32/work_zone_alternate.png",

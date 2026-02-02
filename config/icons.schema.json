@@ -22,6 +22,12 @@
       "default": 0.2,
       "description": "Padding ratio (0-1) for icon inset from edges"
     },
+    "zoom": {
+      "type": "number",
+      "minimum": 0.1,
+      "default": 1,
+      "description": "Zoom multiplier for icon size (1 = default, higher = larger)"
+    },
     "layers": {
       "type": "object",
       "description": "Maps element IDs or class names to hex colors",
@@ -41,6 +47,9 @@
         },
         "padding": {
           "$ref": "#/definitions/padding"
+        },
+        "zoom": {
+          "$ref": "#/definitions/zoom"
         },
         "layers": {
           "$ref": "#/definitions/layers",

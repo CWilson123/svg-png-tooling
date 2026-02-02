@@ -125,9 +125,10 @@ export function composeSvg(
 ): ComposeResult {
   const errors: string[] = [];
 
-  // Get resolved shape and padding
+  // Get resolved shape, padding, and zoom
   const shape = config.shape ?? ICON_CONFIG_DEFAULTS.shape;
   const padding = config.padding ?? ICON_CONFIG_DEFAULTS.padding;
+  const zoom = config.zoom ?? ICON_CONFIG_DEFAULTS.zoom;
 
   // For "none" shape, just return the recolored SVG with normalized viewBox
   if (shape === 'none') {
@@ -137,15 +138,17 @@ export function composeSvg(
       return { iconKey, svgContent: '', shape, errors };
     }
 
-    // Return with square viewBox
+    // Return with square viewBox, with zoom multiplier
     const innerContent = getInnerSvgContent(recoloredSvgContent);
     const rootStyles = extractRootStyles(recoloredSvgContent);
     const maxDim = Math.max(viewBox.width, viewBox.height);
     const offsetX = (maxDim - viewBox.width) / 2 - viewBox.minX;
     const offsetY = (maxDim - viewBox.height) / 2 - viewBox.minY;
+    const baseScale = VIEWBOX_SIZE / maxDim;
+    const scale = baseScale * zoom;
 
     const composed = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${VIEWBOX_SIZE} ${VIEWBOX_SIZE}">
-  <g ${rootStyles} transform="translate(${offsetX * (VIEWBOX_SIZE / maxDim)}, ${offsetY * (VIEWBOX_SIZE / maxDim)}) scale(${VIEWBOX_SIZE / maxDim})">
+  <g ${rootStyles} transform="translate(${offsetX * baseScale}, ${offsetY * baseScale}) scale(${scale})">
     ${innerContent}
   </g>
 </svg>`;
@@ -164,9 +167,9 @@ export function composeSvg(
   const iconAreaSize = VIEWBOX_SIZE * (1 - padding * 2);
   const iconOffset = VIEWBOX_SIZE * padding;
 
-  // Calculate scale to fit the icon in the padded area
+  // Calculate scale to fit the icon in the padded area, with zoom multiplier
   const maxDim = Math.max(viewBox.width, viewBox.height);
-  const scale = iconAreaSize / maxDim;
+  const scale = (iconAreaSize / maxDim) * zoom;
 
   // Center the icon if it's not square
   const iconWidth = viewBox.width * scale;
